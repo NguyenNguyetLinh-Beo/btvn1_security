@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Classical Ciphers Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🔐 Classical Ciphers</h1>
+
+  <div class="form">
+    <label for="cipher">Chọn thuật toán:</label>
+    <select id="cipher">
+      <option value="caesar">Caesar</option>
+      <option value="affine">Affine</option>
+      <option value="columnar">Columnar Transposition</option>
+      <option value="vigenere">Vigenere</option>
+      <option value="playfair">Playfair</option>
+    </select>
+
+    <label for="mode">Chế độ:</label>
+    <select id="mode">
+      <option value="encrypt">Encrypt</option>
+      <option value="decrypt">Decrypt</option>
+    </select>
+
+    <label for="inputText">Nhập văn bản:</label>
+    <textarea id="inputText" rows="4"></textarea>
+
+    <div id="extra"></div>
+
+    <button onclick="runCipher()">Thực hiện</button>
+  </div>
+
+  <h2>Kết quả</h2>
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
